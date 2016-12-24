@@ -4,6 +4,13 @@ public class MySorter
 {
 	public void sort (double[] d)
 	{
+		for (int i = 0; i < d.length; i++)
+		{
+			if(d[i] < 0)
+			{
+				return;
+			}
+		}
 		for (int i = 0; i < d.length - 1; i++)
 		{
 			for (int j = 0; j < d.length - i - 1; j++)
@@ -23,4 +30,3 @@ public class MySorter
 		d[s] = temp;
 	}
 }
-
